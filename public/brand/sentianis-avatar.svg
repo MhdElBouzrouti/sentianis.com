@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1080" y2="1080">
+      <stop offset="0%" stop-color="#05070c"/>
+      <stop offset="50%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#05070c"/>
+    </linearGradient>
+    <radialGradient id="centerAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#94a3b8" stop-opacity="0.12"/>
+      <stop offset="40%" stop-color="#38bdf8" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <linearGradient id="silverArc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1080" height="1080" fill="url(#bgGrad)"/>
+  <circle cx="540" cy="540" r="500" fill="url(#centerAura)"/>
+
+  <!-- Architectural Engineering Circles (Concentric Layers) -->
+  <circle cx="540" cy="540" r="460" stroke="#1e293b" stroke-width="1.5" stroke-opacity="0.6"/>
+  <circle cx="540" cy="540" r="390" stroke="#334155" stroke-width="2" stroke-dasharray="8 10" stroke-opacity="0.4"/>
+  <circle cx="540" cy="540" r="310" stroke="#475569" stroke-width="1.5" stroke-opacity="0.3"/>
+
+  <!-- Cartesian Coordinate Marks -->
+  <line x1="540" y1="50" x2="540" y2="100" stroke="#475569" stroke-width="2" stroke-opacity="0.5"/>
+  <line x1="540" y1="980" x2="540" y2="1030" stroke="#475569" stroke-width="2" stroke-opacity="0.5"/>
+  <line x1="50" y1="540" x2="100" y2="540" stroke="#475569" stroke-width="2" stroke-opacity="0.5"/>
+  <line x1="980" y1="540" x2="1030" y2="540" stroke="#475569" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- Official Monogram S : Dual Arcs (Perception / Action Cycle) -->
+  <g transform="translate(540, 540) scale(4.8)" filter="url(#softGlow)">
+    <!-- Arc Supérieur : Perception (Évaluation de situation) -->
+    <path 
+      d="M26 -58 C-26 -58 -52 -32 -52 -2 C-52 24 -26 36 0 36" 
+      stroke="url(#silverArc)" 
+      stroke-width="13" 
+      stroke-linecap="round"
+    />
+    
+    <!-- Arc Inférieur : Action (Décision bornée) -->
+    <path 
+      d="M0 -36 C26 -36 52 -24 52 2 C52 32 26 58 -26 58" 
+      stroke="url(#silverArc)" 
+      stroke-width="13" 
+      stroke-linecap="round"
+    />
+
+    <!-- Focal Decision Checkpoint -->
+    <circle cx="0" cy="0" r="5" fill="#38bdf8"/>
+    <circle cx="0" cy="0" r="2" fill="#ffffff"/>
+  </g>
+</svg>

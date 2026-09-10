@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" fill="none">
+  <defs>
+    <linearGradient id="xBg" x1="0" y1="0" x2="1500" y2="500">
+      <stop offset="0%" stop-color="#04060a"/>
+      <stop offset="50%" stop-color="#080b12"/>
+      <stop offset="100%" stop-color="#04060a"/>
+    </linearGradient>
+    <radialGradient id="xAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#94a3b8" stop-opacity="0.09"/>
+      <stop offset="40%" stop-color="#38bdf8" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&amp;family=JetBrains+Mono:wght@500&amp;display=swap');
+    .x-wordmark {
+      font-family: 'Cinzel', 'Times New Roman', serif;
+      font-weight: 700;
+      fill: #f8fafc;
+      font-size: 78px;
+      letter-spacing: 0.28em;
+    }
+    .x-domain {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      fill: #64748b;
+      font-size: 14px;
+      letter-spacing: 0.45em;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1500" height="500" fill="url(#xBg)"/>
+  <ellipse cx="780" cy="250" rx="620" ry="220" fill="url(#xAura)"/>
+
+  <!-- Architectural Engineering Grid -->
+  <g stroke="#1e293b" stroke-width="0.6" stroke-opacity="0.25">
+    <line x1="0" y1="125" x2="1500" y2="125"/>
+    <line x1="0" y1="250" x2="1500" y2="250"/>
+    <line x1="0" y1="375" x2="1500" y2="375"/>
+    <line x1="375" y1="0" x2="375" y2="500"/>
+    <line x1="750" y1="0" x2="750" y2="500"/>
+    <line x1="1125" y1="0" x2="1125" y2="500"/>
+  </g>
+
+  <!-- Concentric Structural Circles -->
+  <circle cx="780" cy="250" r="210" stroke="#334155" stroke-width="1.2" stroke-dasharray="8 8" stroke-opacity="0.3"/>
+  <circle cx="780" cy="250" r="160" stroke="#1e293b" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- Decision Vector Tracks -->
+  <line x1="380" y1="250" x2="520" y2="250" stroke="#475569" stroke-width="1.2" stroke-opacity="0.35"/>
+  <circle cx="520" cy="250" r="3.5" fill="#38bdf8"/>
+
+  <line x1="1040" y1="250" x2="1180" y2="250" stroke="#475569" stroke-width="1.2" stroke-opacity="0.35"/>
+  <circle cx="1040" cy="250" r="3.5" fill="#38bdf8"/>
+
+  <!-- Center Wordmark (Slightly offset right for left avatar clearance) -->
+  <g transform="translate(780, 258)">
+    <text x="0" y="0" text-anchor="middle" class="x-wordmark">SENTIANIS</text>
+    <text x="0" y="52" text-anchor="middle" class="x-domain">SENTIANIS.COM</text>
+  </g>
+</svg>

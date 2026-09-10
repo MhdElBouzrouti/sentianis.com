@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 700" fill="none">
+  <defs>
+    <linearGradient id="logoDarkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090e"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&amp;family=JetBrains+Mono:wght@500&amp;display=swap');
+    .full-logo-title-light {
+      font-family: 'Cinzel', 'Times New Roman', serif;
+      font-weight: 700;
+      fill: #07090e;
+      font-size: 150px;
+      letter-spacing: 0.26em;
+    }
+    .full-logo-sub-light {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      fill: #64748b;
+      font-size: 26px;
+      letter-spacing: 0.45em;
+    }
+  </style>
+
+  <!-- Transparent background -->
+
+  <!-- Left: Monogram S Symbol (Dark on Light) -->
+  <g transform="translate(320, 350) scale(2.8)">
+    <circle cx="0" cy="0" r="100" stroke="#e2e8f0" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="85" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="6 8"/>
+    <path 
+      d="M26 -58 C-26 -58 -52 -32 -52 -2 C-52 24 -26 36 0 36" 
+      stroke="url(#logoDarkGrad)" 
+      stroke-width="12" 
+      stroke-linecap="round"
+    />
+    <path 
+      d="M0 -36 C26 -36 52 -24 52 2 C52 32 26 58 -26 58" 
+      stroke="url(#logoDarkGrad)" 
+      stroke-width="12" 
+      stroke-linecap="round"
+    />
+    <circle cx="0" cy="0" r="5" fill="#0284c7"/>
+  </g>
+
+  <!-- Right: Wordmark & Domain -->
+  <text x="720" y="375" class="full-logo-title-light">SENTIANIS</text>
+  <text x="726" y="455" class="full-logo-sub-light">SENTIANIS.COM</text>
+</svg>

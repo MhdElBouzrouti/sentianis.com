@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" fill="none">
+  <defs>
+    <linearGradient id="wmSilver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- High-contrast rounded square base -->
+  <rect width="150" height="150" rx="24" fill="#07090e" fill-opacity="0.92"/>
+  <rect width="148" height="148" x="1" y="1" rx="23" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Concentric dashed micro-ring -->
+  <circle cx="75" cy="75" r="54" stroke="#475569" stroke-width="1" stroke-dasharray="4 4" stroke-opacity="0.5"/>
+
+  <!-- Monogram S -->
+  <g transform="translate(75, 75) scale(0.68)">
+    <path 
+      d="M26 -58 C-26 -58 -52 -32 -52 -2 C-52 24 -26 36 0 36" 
+      stroke="url(#wmSilver)" 
+      stroke-width="13" 
+      stroke-linecap="round"
+    />
+    <path 
+      d="M0 -36 C26 -36 52 -24 52 2 C52 32 26 58 -26 58" 
+      stroke="url(#wmSilver)" 
+      stroke-width="13" 
+      stroke-linecap="round"
+    />
+    <circle cx="0" cy="0" r="5.5" fill="#38bdf8"/>
+  </g>
+</svg>

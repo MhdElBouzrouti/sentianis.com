@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 700" fill="none">
+  <defs>
+    <linearGradient id="logoSilver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&amp;family=JetBrains+Mono:wght@500&amp;display=swap');
+    .full-logo-title {
+      font-family: 'Cinzel', 'Times New Roman', serif;
+      font-weight: 700;
+      fill: #f8fafc;
+      font-size: 150px;
+      letter-spacing: 0.26em;
+    }
+    .full-logo-sub {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      fill: #64748b;
+      font-size: 26px;
+      letter-spacing: 0.45em;
+    }
+  </style>
+
+  <!-- Transparent background -->
+
+  <!-- Left: Monogram S Symbol -->
+  <g transform="translate(320, 350) scale(2.8)">
+    <circle cx="0" cy="0" r="100" stroke="#1e293b" stroke-width="1.5" stroke-opacity="0.6"/>
+    <circle cx="0" cy="0" r="85" stroke="#334155" stroke-width="1.5" stroke-dasharray="6 8" stroke-opacity="0.4"/>
+    <path 
+      d="M26 -58 C-26 -58 -52 -32 -52 -2 C-52 24 -26 36 0 36" 
+      stroke="url(#logoSilver)" 
+      stroke-width="12" 
+      stroke-linecap="round"
+    />
+    <path 
+      d="M0 -36 C26 -36 52 -24 52 2 C52 32 26 58 -26 58" 
+      stroke="url(#logoSilver)" 
+      stroke-width="12" 
+      stroke-linecap="round"
+    />
+    <circle cx="0" cy="0" r="5" fill="#38bdf8"/>
+  </g>
+
+  <!-- Right: Wordmark & Domain -->
+  <text x="720" y="375" class="full-logo-title">SENTIANIS</text>
+  <text x="726" y="455" class="full-logo-sub">SENTIANIS.COM</text>
+</svg>

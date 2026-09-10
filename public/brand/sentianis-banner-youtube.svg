@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 1152" fill="none">
+  <defs>
+    <linearGradient id="ytBg" x1="0" y1="0" x2="2048" y2="1152">
+      <stop offset="0%" stop-color="#04060a"/>
+      <stop offset="50%" stop-color="#080b12"/>
+      <stop offset="100%" stop-color="#04060a"/>
+    </linearGradient>
+    <radialGradient id="ytAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#94a3b8" stop-opacity="0.10"/>
+      <stop offset="40%" stop-color="#38bdf8" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&amp;family=JetBrains+Mono:wght@500&amp;display=swap');
+    .yt-wordmark {
+      font-family: 'Cinzel', 'Times New Roman', serif;
+      font-weight: 700;
+      fill: #f8fafc;
+      font-size: 84px;
+      letter-spacing: 0.28em;
+    }
+    .yt-domain {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 500;
+      fill: #64748b;
+      font-size: 15px;
+      letter-spacing: 0.45em;
+    }
+  </style>
+
+  <!-- Full TV Background -->
+  <rect width="2048" height="1152" fill="url(#ytBg)"/>
+  <circle cx="1024" cy="576" r="650" fill="url(#ytAura)"/>
+
+  <!-- Engineering Grid (Extended across full canvas) -->
+  <g stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.25">
+    <line x1="0" y1="288" x2="2048" y2="288"/>
+    <line x1="0" y1="576" x2="2048" y2="576"/>
+    <line x1="0" y1="864" x2="2048" y2="864"/>
+    <line x1="512" y1="0" x2="512" y2="1152"/>
+    <line x1="1024" y1="0" x2="1024" y2="1152"/>
+    <line x1="1536" y1="0" x2="1536" y2="1152"/>
+  </g>
+
+  <!-- Concentric Structural Circles (Centered at 1024, 576) -->
+  <circle cx="1024" cy="576" r="420" stroke="#1e293b" stroke-width="1.5" stroke-opacity="0.5"/>
+  <circle cx="1024" cy="576" r="320" stroke="#334155" stroke-width="1.5" stroke-dasharray="10 12" stroke-opacity="0.4"/>
+  <circle cx="1024" cy="576" r="220" stroke="#1e293b" stroke-width="1.2" stroke-opacity="0.6"/>
+
+  <!-- Decision Vector Tracks in Safe Area -->
+  <line x1="480" y1="576" x2="680" y2="576" stroke="#475569" stroke-width="1.5" stroke-opacity="0.4"/>
+  <circle cx="680" cy="576" r="4" fill="#38bdf8"/>
+
+  <line x1="1368" y1="576" x2="1568" y2="576" stroke="#475569" stroke-width="1.5" stroke-opacity="0.4"/>
+  <circle cx="1368" cy="576" r="4" fill="#38bdf8"/>
+
+  <!-- Center Stage (Strictly centered inside the 1232x338 Safe Zone) -->
+  <g transform="translate(1024, 584)">
+    <text x="0" y="0" text-anchor="middle" class="yt-wordmark">SENTIANIS</text>
+    <text x="0" y="56" text-anchor="middle" class="yt-domain">SENTIANIS.COM</text>
+  </g>
+</svg>
